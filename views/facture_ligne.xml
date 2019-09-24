@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_file_ligne_facture_form" model="ir.ui.view">
+        <field name="name">file.ligne.facture.form</field>
+        <field name="model">file.ligne.facture</field>
+        <field name="arch" type="xml">
+            <form string="Facture ligne">
+                <sheet string="Facture ligne">
+                    <group>
+                        <group name="left">
+                            <field name='Domaine'/>
+                            <field name='IdLigne'/>
+                            <field name='IdFacture'/>
+                            <field name='NumFacture'/>
+                            <field name='Facture_Avoir'/>
+                            <field name='DateFacture'/>
+                            <field name='IdContrat'/>
+                        </group>
+                        <group name="right">
+                            <field name='NumContrat'/>
+                            <field name='AnneeContrat'/>
+                            <field name='NumeroSerie'/>
+                            <field name='RefArticle'/>
+                            <field name='TypeArticle'/>
+                            <field name='Designation'/>
+                            <field name='PxUnitaire'/>
+                            <field name='Remise'/>
+                            <field name='PxUnitaireNet'/>
+                            <field name='Qte'/>
+                            <field name='TotalHT'/>
+                            <field name='IdTiersContrat'/>
+                            <field name='CompteTiersContrat'/>
+                            <field name='CompteTiersFacture'/>
+                            <field name='DatePeriodeDebut'/>
+                            <field name='DatePeriodeFin'/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_file_ligne_facture_tree" model="ir.ui.view">
+        <field name="name">file.ligne.facture.tree</field>
+        <field name="model">file.ligne.facture</field>
+        <field name="arch" type="xml">
+            <tree string="Facture ligne">
+                <field name='Domaine'/>
+                <field name='IdLigne'/>
+                <field name='IdFacture'/>
+                <field name='NumFacture'/>
+                <field name='Facture_Avoir'/>
+                <field name='DateFacture'/>
+                <field name='IdContrat'/>
+                <field name='NumContrat'/>
+                <field name='AnneeContrat'/>
+                <field name='NumeroSerie'/>
+                <field name='RefArticle'/>
+                <field name='TypeArticle'/>
+                <field name='Designation'/>
+                <field name='PxUnitaire'/>
+                <field name='Remise'/>
+                <field name='PxUnitaireNet'/>
+                <field name='Qte'/>
+                <field name='TotalHT'/>
+                <field name='IdTiersContrat'/>
+                <field name='CompteTiersContrat'/>
+                <field name='CompteTiersFacture'/>
+                <field name='DatePeriodeDebut'/>
+                <field name='DatePeriodeFin'/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_ligne_facture" model="ir.actions.act_window">
+        <field name="name">Facture ligne</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">file.ligne.facture</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>

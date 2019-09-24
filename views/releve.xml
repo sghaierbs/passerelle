@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_file_releve_form" model="ir.ui.view">
+        <field name="name">file.releve.form</field>
+        <field name="model">file.releve</field>
+        <field name="arch" type="xml">
+            <form string="Releve">
+                <sheet string="Releve">
+                    <group>
+                        <group name="left">
+                            <field name='TypeReleve'/>
+                            <field name='TypeCompteur'/>
+                            <field name='NumeroSerie'/>
+                            <field name='NumContrat'/>
+                            <field name='NumeroFacture'/>
+                            <field name='NumeroReleve'/>
+                            <field name='DateReleve'/>
+                        </group>
+                        <group name="right">
+                            <field name='DateDebutPeriode'/>
+                            <field name='DateFinPeriode'/>
+                            <field name='CompteurReleve'/>
+                            <field name='Consommation'/>
+                            <field name='VolumeDepassement'/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_file_releve_tree" model="ir.ui.view">
+        <field name="name">file.releve.tree</field>
+        <field name="model">file.releve</field>
+        <field name="arch" type="xml">
+            <tree string="Releves">
+                <field name='TypeReleve'/>
+                <field name='TypeCompteur'/>
+                <field name='NumeroSerie'/>
+                <field name='NumContrat'/>
+                <field name='NumeroFacture'/>
+                <field name='NumeroReleve'/>
+                <field name='DateReleve'/>
+                <field name='DateDebutPeriode'/>
+                <field name='DateFinPeriode'/>
+                <field name='CompteurReleve'/>
+                <field name='Consommation'/>
+                <field name='VolumeDepassement'/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_releve" model="ir.actions.act_window">
+        <field name="name">Releve</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">file.releve</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>

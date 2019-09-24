@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+    <menuitem id="passerelle_config_settings_menu"
+        name="Settings"
+        parent="studio_customization.parc_b699992a-8ba6-4fb1-acb4-c3e12271564d"
+        action="passerelle_config_settings_action"
+        groups="base.group_no_one"
+        sequence="0"/>
+
+    <menuitem id="contrat_menu"
+        name="Contrat"
+        parent="studio_customization.parc_b699992a-8ba6-4fb1-acb4-c3e12271564d"
+        action="action_contrat"
+        groups="base.group_no_one"
+        sequence="0"/>
+
+    <menuitem id="releve_menu"
+        name="Relve"
+        parent="studio_customization.parc_b699992a-8ba6-4fb1-acb4-c3e12271564d"
+        action="action_releve"
+        groups="base.group_no_one"
+        sequence="0"/>
+
+    <menuitem id="compteur_menu"
+        name="Compteur"
+        parent="studio_customization.parc_b699992a-8ba6-4fb1-acb4-c3e12271564d"
+        action="action_compteur"
+        groups="base.group_no_one"
+        sequence="0"/>
+
+    <menuitem id="facture_ligne_menu"
+        name="Facture Ligne"
+        parent="studio_customization.parc_b699992a-8ba6-4fb1-acb4-c3e12271564d"
+        action="action_ligne_facture"
+        groups="base.group_no_one"
+        sequence="0"/>
+
+    <menuitem id="bl_ligne_menu"
+        name="BL Ligne"
+        parent="studio_customization.parc_b699992a-8ba6-4fb1-acb4-c3e12271564d"
+        action="action_bl_ligne"
+        groups="base.group_no_one"
+        sequence="0"/>
+
+
+    <menuitem id="machine_menu"
+        name="Machine"
+        parent="studio_customization.parc_b699992a-8ba6-4fb1-acb4-c3e12271564d"
+        action="action_machine"
+        groups="base.group_no_one"
+        sequence="0"/>
+
+    
+
+</odoo>

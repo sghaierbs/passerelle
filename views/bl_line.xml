@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_file_bl_ligne_form" model="ir.ui.view">
+        <field name="name">file.bl.ligne.form</field>
+        <field name="model">file.bl.ligne</field>
+        <field name="arch" type="xml">
+            <form string="BL Ligne">
+                <sheet string="BL Ligne">
+                    <group>
+                        <group name="left">
+                            <field name='Domaine'/>
+                            <field name='IdLigne'/>
+                            <field name='IdPiece'/>
+                            <field name='IdTiers'/>
+                            <field name='NumPiece'/>
+                            <field name='TypePiece'/>
+                            <field name='DatePiece'/>
+                            <field name='IdContrat'/>
+                            <field name='NumContrat'/>
+                            <field name='AnneeContrat'/>
+                            <field name='NumeroSerie'/>
+                            <field name='RefArticle'/>
+                            <field name='TypeArticle'/>
+                            <field name='Designation'/>
+                        </group>
+                        <group name="right">
+                            <field name='PxUnitaire'/>
+                            <field name='Remise'/>
+                            <field name='PxUnitaireNet'/>
+                            <field name='Qte'/>
+                            <field name='TotalHT'/>
+                            <field name='DatePeriodeDebut'/>
+                            <field name='DatePeriodeFin'/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_file_bl_ligne_tree" model="ir.ui.view">
+        <field name="name">file.bl.ligne.tree</field>
+        <field name="model">file.bl.ligne</field>
+        <field name="arch" type="xml">
+            <tree string="BL Ligne">
+                <field name='Domaine'/>
+                <field name='IdLigne'/>
+                <field name='IdPiece'/>
+                <field name='IdTiers'/>
+                <field name='NumPiece'/>
+                <field name='TypePiece'/>
+                <field name='DatePiece'/>
+                <field name='IdContrat'/>
+                <field name='NumContrat'/>
+                <field name='AnneeContrat'/>
+                <field name='NumeroSerie'/>
+                <field name='RefArticle'/>
+                <field name='TypeArticle'/>
+                <field name='Designation'/>
+                <field name='PxUnitaire'/>
+                <field name='Remise'/>
+                <field name='PxUnitaireNet'/>
+                <field name='Qte'/>
+                <field name='TotalHT'/>
+                <field name='DatePeriodeDebut'/>
+                <field name='DatePeriodeFin'/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_bl_ligne" model="ir.actions.act_window">
+        <field name="name">BL Ligne</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">file.bl.ligne</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>

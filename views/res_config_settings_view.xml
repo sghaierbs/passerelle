@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="passerelle_res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.passerelle</field>
+        <field name="model">res.config.settings</field>
+        <field name="priority" eval="5"/>
+        <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[hasclass('settings')]" position="inside">
+                <div class="app_settings_block" data-string="PARC" string="PARC" data-key="passerelle" >
+                    <h2>Mounted Path</h2>
+                    <div class="row mt16 o_settings_container">
+                        <div class="col-md-6 o_setting_box">
+                            <div class="o_setting_right_pane">
+                                <div>
+                                    <label string="Path" for="mounted_path"/>
+                                    <div class="text-muted">
+                                        Set the path from where to load the data files
+                                    </div>
+                                    <div class="content-group mt16">
+                                        <field name="mounted_path" colspan="4" nolabel="1"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 o_setting_box">
+                            <div class="o_setting_right_pane">
+                                <label string="Invoice file name" for="invoice_file_name"/>
+                                <div class="text-muted">
+                                    Set the <b>invoice</b> file name from where to load the data
+                                </div>
+                                <div class="content-group mt16">
+                                    <field name="invoice_file_name" colspan="4" nolabel="0"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-md-6 o_setting_box">
+                            <div class="o_setting_right_pane">
+                                <label string="Counter file name" for="counter_file_name"/>
+                                <div class="text-muted">
+                                    Set the <b>couter</b> file name from where to load the data
+                                </div>
+                                <div class="content-group mt16">
+                                    <field name="counter_file_name" colspan="4" nolabel="0"/>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-xs-12 col-md-6 o_setting_box">
+                            <div class="o_setting_right_pane">
+                                <label string="Statement file name" for="statement_file_name"/>
+                                <div class="text-muted">
+                                    Set the <b>statement</b> file name from where to load the data
+                                </div>
+                                <div class="content-group mt16">
+                                    <field name="statement_file_name" colspan="4" nolabel="0"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6 o_setting_box">
+                            <div class="o_setting_right_pane">
+                                <label string="Contract file name" for="contract_file_name"/>
+                                <div class="text-muted">
+                                    Set the <b>contract</b> file name from where to load the data
+                                </div>
+                                <div class="content-group mt16">
+                                    <field name="contract_file_name" colspan="4" nolabel="0"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-md-6 o_setting_box">
+                            <div class="o_setting_right_pane">
+                                <label string="Invoice line file name" for="invoice_line_file_name"/>
+                                <div class="text-muted">
+                                    Set the <b>invoice line</b> file name from where to load the data
+                                </div>
+                                <div class="content-group mt16">
+                                    <field name="invoice_line_file_name" colspan="4" nolabel="0"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-md-6 o_setting_box">
+                            <div class="o_setting_right_pane">
+                                <label string="BL line file name" for="picking_line_file_name"/>
+                                <div class="text-muted">
+                                    Set the <b>BL Line line</b> file name from where to load the data
+                                </div>
+                                <div class="content-group mt16">
+                                    <field name="picking_line_file_name" colspan="4" nolabel="0"/>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </xpath>
+
+
+            <xpath expr="//div[hasclass('settings')]" position="inside">
+                <div class="app_settings_block" data-string="PARC" string="PARC" data-key="passerelle" >
+                    <h2>Fields names</h2>
+                    <div class="row mt16 o_settings_container">
+
+                        <div class="col-xs-12 col-md-6 o_setting_box">
+                            <div class="o_setting_right_pane">
+                                <label string="N° Série Machine" for="machine_serial_number"/>
+                                <div class="text-muted">
+                                    Set the <b>N° Série Machine</b> field name
+                                </div>
+                                <div class="content-group mt16">
+                                    <field name="machine_serial_number" colspan="4" nolabel="0"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-md-6 o_setting_box">
+                            <div class="o_setting_right_pane">
+                                <label string="Engagement NB" for="black_white_counter"/>
+                                <div class="text-muted">
+                                    Set the <b>Engagement NB</b> field name
+                                </div>
+                                <div class="content-group mt16">
+                                    <field name="black_white_counter" colspan="4" nolabel="0"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-md-6 o_setting_box">
+                            <div class="o_setting_right_pane">
+                                <label string="Engagement COUL" for="color_counter"/>
+                                <div class="text-muted">
+                                    Set the <b>Engagement COUL</b> field name
+                                </div>
+                                <div class="content-group mt16">
+                                    <field name="color_counter" colspan="4" nolabel="0"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-md-6 o_setting_box">
+                            <div class="o_setting_right_pane">
+                                <label string="N° Contrat" for="contract_number"/>
+                                <div class="text-muted">
+                                    Set the <b>N° Contrat</b> field name
+                                </div>
+                                <div class="content-group mt16">
+                                    <field name="contract_number" colspan="4" nolabel="0"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-md-6 o_setting_box">
+                            <div class="o_setting_right_pane">
+                                <label string="Coût Page NB" for="black_white_cost"/>
+                                <div class="text-muted">
+                                    Set the <b>Coût Page NB</b> field name
+                                </div>
+                                <div class="content-group mt16">
+                                    <field name="black_white_cost" colspan="4" nolabel="0"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-md-6 o_setting_box">
+                            <div class="o_setting_right_pane">
+                                <label string="Coût page COUL" for="color_cost"/>
+                                <div class="text-muted">
+                                    Set the <b>Coût page COUL</b> field name
+                                </div>
+                                <div class="content-group mt16">
+                                    <field name="color_cost" colspan="4" nolabel="0"/>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xs-12 col-md-6 o_setting_box">
+                            <div class="o_setting_right_pane">
+                                <label string="Engagement Total facture" for="total_ttc"/>
+                                <div class="text-muted">
+                                    Set the <b>Engagement Total facture</b> field name
+                                </div>
+                                <div class="content-group mt16">
+                                    <field name="total_ttc" colspan="4" nolabel="0"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-md-6 o_setting_box">
+                            <div class="o_setting_right_pane">
+                                <label string="Date dernier relevé" for="last_statement_date"/>
+                                <div class="text-muted">
+                                    Set the <b>Date dernier relevé</b> field name
+                                </div>
+                                <div class="content-group mt16">
+                                    <field name="last_statement_date" colspan="4" nolabel="0"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-md-6 o_setting_box">
+                            <div class="o_setting_right_pane">
+                                <label string="Date dernier mise à jour automatique" for="last_auto_update_date"/>
+                                <div class="text-muted">
+                                    Set the <b>Date dernier mise à jour automatique</b> field name
+                                </div>
+                                <div class="content-group mt16">
+                                    <field name="last_auto_update_date" colspan="4" nolabel="0"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-md-6 o_setting_box">
+                            <div class="o_setting_right_pane">
+                                <label string="Durée contrat" for="contract_periode"/>
+                                <div class="text-muted">
+                                    Set the <b>Durée contrat</b> field name
+                                </div>
+                                <div class="content-group mt16">
+                                    <field name="contract_periode" colspan="4" nolabel="0"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="passerelle_config_settings_action" model="ir.actions.act_window">
+        <field name="name">Configuration</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">res.config.settings</field>
+        <field name="view_id" ref="passerelle_res_config_settings_view_form"/>
+        <field name="view_mode">form</field>
+        <field name="target">inline</field>
+        <field name="context">{'module' : 'passerelle'}</field>
+    </record>
+</odoo>

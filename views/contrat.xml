@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_file_contrat_form" model="ir.ui.view">
+        <field name="name">file.contrat.form</field>
+        <field name="model">file.contrat</field>
+        <field name="arch" type="xml">
+            <form string="Releve">
+                <sheet string="Contrat">
+                    <group>
+                        <group name="left">
+                            <field name='Domaine'/>
+                            <field name='TypeContrat'/>
+                            <field name='IdTiers'/>
+                            <field name='NumeroSerie'/>
+                            <field name='NumContrat'/>
+                            <field name='ReferenceProduit'/>
+                            <field name='Forfait'/>
+                        </group>
+                        <group name="right">
+                            <field name='PageSupNoir'/>
+                            <field name='PageSupCoul'/>
+                            <field name='CopiesInclusesNoir'/>
+                            <field name='CompteurDepartNoir'/>
+                            <field name='CompteurDepartCoul'/>
+                            <field name='DateDebutContrat'/>
+                            <field name='DateFinContrat'/>
+                            <field name='Engagement'/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_file_contrat_tree" model="ir.ui.view">
+        <field name="name">file.contrat.tree</field>
+        <field name="model">file.contrat</field>
+        <field name="arch" type="xml">
+            <tree string="Contrats">
+                <field name='Domaine'/>
+                <field name='TypeContrat'/>
+                <field name='IdTiers'/>
+                <field name='NumeroSerie'/>
+                <field name='NumContrat'/>
+                <field name='ReferenceProduit'/>
+                <field name='Forfait'/>
+                <field name='PageSupNoir'/>
+                <field name='PageSupCoul'/>
+                <field name='CopiesInclusesNoir'/>
+                <field name='CompteurDepartNoir'/>
+                <field name='CompteurDepartCoul'/>
+                <field name='DateDebutContrat'/>
+                <field name='DateFinContrat'/>
+                <field name='Engagement'/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_contrat" model="ir.actions.act_window">
+        <field name="name">Contrat</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">file.contrat</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+</odoo>

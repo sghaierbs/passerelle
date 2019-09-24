@@ -1,0 +1,21 @@
+{
+    'name': "Passerelle",
+    'version': '1.0',
+    'category': 'Importation des données depuis fichier TXT',
+    'author': 'Ben Selma Sghaier',
+    'depends': ['base', 'web_studio'],
+    'data': [
+        'data/data.xml',
+        'views/res_config_settings_view.xml',
+        'views/releve.xml',
+        'views/compteur.xml',
+        'views/contrat.xml',
+        'views/machine.xml',
+        'views/facture_ligne.xml',
+        'views/bl_line.xml',
+        'views/menuitem.xml',
+    ],
+    'installable': True,
+    'auto_install': False,
+    'application': True,
+}

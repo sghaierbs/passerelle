@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data noupdate="1">
+      
+        <record id="online_sync_cron" model="ir.cron">
+            <field name="name">File loader</field>
+            <field name="model_id" ref="passerelle.model_file_loader"/>
+            <field name="state">code</field>
+            <field name="code">model.load_files()</field>
+            <field name="active" eval="True"/>
+            <field name="user_id" ref="base.user_root"/>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field name="nextcall" >2019-03-28 05:01:00</field>
+            <field name="doall" eval="False"/>
+        </record>
+    </data>
+
+
+</odoo>
